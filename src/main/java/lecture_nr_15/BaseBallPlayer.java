@@ -1,6 +1,6 @@
 package lecture_nr_15;
 
-public class BaseBallPlayer implements Player{
+public class BaseBallPlayer extends Human implements Player{
 
     String name;
     String surname;

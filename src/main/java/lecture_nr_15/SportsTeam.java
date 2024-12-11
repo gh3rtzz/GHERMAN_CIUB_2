@@ -3,10 +3,12 @@ package lecture_nr_15;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SportsTeam<T extends Player> {
+public class SportsTeam<T extends Human & Player> {
 
     String name;
     List<T> roster = new ArrayList<>();
+
+    T example;
 
     int totalWins = 0;
     int totalLosses = 0;

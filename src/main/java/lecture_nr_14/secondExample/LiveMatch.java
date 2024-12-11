@@ -1,5 +1,9 @@
 package lecture_nr_14.secondExample;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class LiveMatch {
 
     public static void main(String[] args) {
@@ -45,7 +49,15 @@ public class LiveMatch {
         s2.incrementWins();
         s2.incrementTies();
 
-        System.out.println(s1.showRank());
-        System.out.println(s2.showRank());
+//        System.out.println(s1.showRank());
+//        System.out.println(s2.showRank());
+
+        List<SportsTeam<?>> sportsTeamList = new ArrayList<>(
+                Arrays.asList(s1, s2, s3, s4)
+        );
+
+        for(SportsTeam<?> h : sportsTeamList){
+            System.out.println(h.showRank());
+        }
     }
 }
