@@ -1,4 +1,4 @@
-package lecture_nr_17;
+package lecture_nr_17_18;
 
 import java.io.*;
 import java.util.List;
@@ -7,7 +7,7 @@ public class IOExample {
 
     public static void main(String[] args) throws IOException {
 
-        File file1 = new File("src/main/java/lecture_nr_17/files/test.txt");
+        File file1 = new File("src/main/java/lecture_nr_17_18/files/test.txt");
 
         FileReader reader1 = new FileReader(file1);
 
@@ -47,7 +47,7 @@ public class IOExample {
 
         //WRITER
 
-        File file2 = new File("src/main/java/lecture_nr_17/files/testFileToWrite.txt");
+        File file2 = new File("src/main/java/lecture_nr_17_18/files/testFileToWrite.txt");
         FileWriter fileWriter = new FileWriter(file2, true);
 
         fileWriter.write("Morning\n");
@@ -60,5 +60,9 @@ public class IOExample {
         bufferedWriter.write("asdasd");
         bufferedWriter.newLine();
         bufferedWriter.close();
+
+        //Working with files
+
+
     }
 }
