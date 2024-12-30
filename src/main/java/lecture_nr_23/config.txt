@@ -1,0 +1,3 @@
+dbUrl: localhost:4321
+redisHost: localhost:5555
+sshHost: localhost:22
